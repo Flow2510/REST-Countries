@@ -1,0 +1,79 @@
+.country{
+    padding: 2.5rem;
+    max-width: 1200px;
+    margin: auto;
+
+    &__link{
+        background: var(--element);
+        box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.164);
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    &__content{
+        padding: 2rem 0;
+        color: var(--text);
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            gap: 5rem;
+        }
+
+        &-image{
+            width: 100%;
+            aspect-ratio: 1/0.6;
+            object-fit: cover;
+
+            @media screen and (min-width:768px){
+                width: 50%;
+            }
+        }
+
+        &-ul-wrapper{
+            width: 100%;
+            
+            @media screen and (min-width:768px){
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        &-ul{
+            padding: 1rem 0;
+            list-style-type: none;
+            width: 100%;
+        }
+
+        &-li{
+            margin-top: 0.5rem;
+        }
+
+        &-button{
+            background: var(--element);
+            border: none;
+            margin: 1rem 0.5rem 0 0;
+            box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.164);
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            color: var(--text);
+
+            @media screen and (min-width:768px){
+                margin: 0 0.5rem 0.5rem;
+            }
+        }
+
+        &-border-wrapper{
+            display: flex;
+        }
+
+        &-border-title{
+            font-size: 1rem;
+            text-wrap: nowrap;
+        }
+    }
+
+    &__error{
+        margin: 2rem 0;
+    }
+}

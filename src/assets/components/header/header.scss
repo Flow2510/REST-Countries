@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0rem 0 0.5rem rgba(0, 0, 0, 0.089);
+    background: var(--element);
+    color: var(--text);
+
+    &__wrapper{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    &__button{
+        background: var(--element);
+        border: none;
+        text-decoration: none;
+        color: var(--text);
+        cursor: pointer;
+
+        & i{
+            transform: rotate(-30deg);
+            margin-right: 0.5rem;
+        }
+    }
+}

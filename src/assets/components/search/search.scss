@@ -1,0 +1,60 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    color: var(--text);
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        gap: 15rem;
+    }
+
+    &__label{
+        background: var(--other);
+        box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.164);
+
+        &-search{
+            width: 100%;
+            display: flex;
+            border-radius: 0.3rem;
+            align-items: center;
+
+            & input{
+                width: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                padding: 0.8rem 0;
+                color: var(--text);
+
+                &::placeholder{
+                    color: var(--text);
+                }
+            }
+
+            & i{
+                padding: 0 1rem;
+            }
+        }
+
+        &-region{
+            border-radius: 0.3rem;
+            padding-right: 1rem;
+            width: 60%;
+            border: none;
+        }
+    }
+
+    &__select{
+        border: none;
+        background: var(--other);
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border-radius: 0.3rem;
+        outline: none;
+        color: var(--text);
+    }
+}

@@ -1,0 +1,19 @@
+.gallery{
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: auto;
+
+    @media screen and (min-width:1000px){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1000px;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: var(--text);
+    }
+}

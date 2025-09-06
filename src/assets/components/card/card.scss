@@ -1,0 +1,33 @@
+.card{
+    background: var(--element);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.164);
+    height: 100%;
+
+    &__image{
+        width: 100%;
+        aspect-ratio: 1 / 0.6;
+        object-fit: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+        box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.164);
+    }
+
+    &__content{
+        padding: 1rem ;
+    
+        &-title{
+            padding-bottom: 1rem;
+            font-size: 1rem;
+            max-width: 158px;
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        &-subtitle{
+            font-size: 0.8rem;
+            padding-top: 0.5rem;
+        }
+    }
+}
