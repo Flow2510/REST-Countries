@@ -7,12 +7,12 @@ export default function Search({ filteredRegion, setFilteredRegion, setFilteredC
 
     return(
         <section className='search'>
-            <label className='search__label search__label-search' htmlFor="">
+            <label className='search__label search__label-search' htmlFor="search-input">
                 <i className="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder='Search for a country...' onChange={(e) => setFilteredCountry(e.target.value)}/>
+                <input type="text" placeholder='Search for a country...' id='search-input' onChange={(e) => setFilteredCountry(e.target.value)}/>
             </label>
             <label className='search__label search__label-region' htmlFor="">
-                <select value={filteredRegion} className='search__select' name="" id="" onChange={(e) => setFilteredRegion(e.target.value)} >
+                <select value={filteredRegion} className='search__select' name="" id="select-input" onChange={(e) => setFilteredRegion(e.target.value)} >
                     <option value="" disabled hidden>
                         Filter by Region
                     </option>
