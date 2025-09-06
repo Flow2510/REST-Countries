@@ -13,6 +13,9 @@ export default function App() {
   }
   const [filteredRegion, setFilteredRegion] = useState("");
   const [filteredCountry, setFilteredCountry] = useState("");
+  const resetInput = () => {
+    setFilteredCountry("");
+  }
 
   return (
     <div className={darkMode ? 'dark-theme app' : 'light-theme app'}>
@@ -27,6 +30,7 @@ export default function App() {
           countries={countries}
           setFilteredCountry={setFilteredCountry}
           filteredCountry={filteredCountry}
+          resetInput={resetInput}
         />}/>
         <Route path="/country/:id" element={<CountryPage />} />
        </Routes>

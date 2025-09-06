@@ -3,7 +3,7 @@ import countries from '../../data/data.json';
 import Card from '../card/card';
 import { Link } from 'react-router-dom';
 
-export default function Gallery({ filteredRegion, filteredCountry }) {
+export default function Gallery({ filteredRegion, filteredCountry, resetInput }) {
     const countriesByRegion = filteredRegion ? countries.filter(country => country.region === filteredRegion) : countries;
     const countryByName = filteredCountry ? countries.filter(country => country.name.toLowerCase().includes(filteredCountry.toLowerCase())) : [];
     const displayedCountries = filteredCountry.length ? countryByName : countriesByRegion;
@@ -11,7 +11,7 @@ export default function Gallery({ filteredRegion, filteredCountry }) {
   return (
     <section className='gallery'>
       {displayedCountries.map((country) => (
-        <Link className="gallery__link" key={country.alpha3Code} to={`/country/${country.alpha3Code}`}>
+        <Link className="gallery__link" key={country.alpha3Code} onClick={resetInput} to={`/country/${country.alpha3Code}`}>
             <Card
                 flag={country.flag}
                 alt={"flag of " + country.name}

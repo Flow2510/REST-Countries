@@ -64,12 +64,18 @@
         }
 
         &-border-wrapper{
-            display: flex;
+
+            @media screen and (min-width:768px){
+                display: flex;
+            }
         }
 
         &-border-title{
-            font-size: 1rem;
-            text-wrap: nowrap;
+            
+            @media screen and (min-width:768px){
+                font-size: 1rem;
+                text-wrap: nowrap;
+            }
         }
     }
 

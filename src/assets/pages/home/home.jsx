@@ -2,7 +2,7 @@ import './home.scss';
 import Search from '../../components/search/search'
 import Gallery from '../../components/gallery/gallery'
 
-export default function Home({ setFilteredRegion, filteredRegion, countries, setFilteredCountry, filteredCountry}){
+export default function Home({ setFilteredRegion, filteredRegion, countries, setFilteredCountry, filteredCountry, resetInput }){
     return(
         <main>
           <Search
@@ -14,6 +14,7 @@ export default function Home({ setFilteredRegion, filteredRegion, countries, set
           <Gallery 
             filteredRegion={filteredRegion}
             filteredCountry={filteredCountry}
+            resetInput={resetInput}
           />
        </main>
     )
