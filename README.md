@@ -4,8 +4,7 @@ Application web permettant de consulter les pays du monde via une API REST, avec
 
 ## 🚀 Demo
 
-🔗 Live : (ajoute ton lien ici)  
-🔗 Repo : (ajoute ton lien GitHub ici)
+🔗 Live : https://restapicountriesflow2510.netlify.app/
 
 📌 Aperçu du projet
 
