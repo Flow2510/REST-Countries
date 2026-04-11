@@ -1,12 +1,56 @@
-# React + Vite
+🌍 REST Countries API App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web permettant de consulter les pays du monde via une API REST, avec recherche, filtres et gestion du thème clair/sombre.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live : (ajoute ton lien ici)  
+🔗 Repo : (ajoute ton lien GitHub ici)
 
-## Expanding the ESLint configuration
+📌 Aperçu du projet
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ce projet est une solution au challenge REST Countries API with color theme switcher de Frontend Mentor.
+
+L’objectif est de créer une application permettant de :
+- afficher tous les pays via une API
+- rechercher un pays par nom
+- filtrer les pays par région
+- consulter les détails d’un pays
+- naviguer entre les pays frontaliers
+- basculer entre mode clair et sombre
+
+🛠️ Stack technique
+
+- React
+- Vite
+- SCSS (Sass)
+- REST Countries API
+- JavaScript (ES6+)
+
+✨ Fonctionnalités
+
+- Recherche de pays par nom
+- Filtrage par région
+- Page de détails dynamique par pays
+- Navigation entre pays frontaliers
+- Toggle thème clair / sombre
+- Interface responsive (mobile / desktop)
+
+📡 API utilisée
+
+https://restcountries.com/
+
+🎯 Objectifs d’apprentissage
+
+Ce projet m’a permis de travailler sur :
+- la consommation d’API REST
+- la gestion des états en React
+- le routing dynamique
+- la manipulation de données (search / filter)
+
+🔥 Améliorations possibles
+
+- optimisation des performances API
+- amélioration du système de recherche
+- ajout d’animations UI
+- tests unitaires
